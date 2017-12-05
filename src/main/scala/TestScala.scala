@@ -9,6 +9,7 @@ object TestScala {
     conf.setMaster("local[2]")
 
     val sc = new SparkContext(conf)
+    
 
     //FASE 1: Cargar los datos
     val inputRDD = sc.textFile("2008.csv")
@@ -20,7 +21,7 @@ object TestScala {
 
     //FASE 2: Procesar los datos
     //2.1) Seleccionar las variables a usar (filter)
-
+   // val selectedRDD = prueba.map(x => (x.))
     //2.2) Transformar las variables que no se van a usar o que no se puedan usar en
     //su forma cruda
     //2.3) Crear nuevas variables derivadas que puedan ser útiles para formar un modelo mejor
